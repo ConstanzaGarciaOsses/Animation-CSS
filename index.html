@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio 2 - Mis Demonios </title>
+    <!-- Aqui enlazo el archivo CSS: -->
+    <link rel="stylesheet" href="./Assets/CSS/Estilo.css">
+    <!-- Enlazar la libreria de bootstrap para los iconos del footer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Primero vamos a poner el sidebar que es lo que muestra en la esquina superior izquierda. Esto es lo que ocupa el espacio de esa esquina primero. Seguido, vendrá el header, que no parte desde esa esquina si no que del "centro". -->
+
+        <sidebar class="Menu">
+
+            <div class="Titulo-Icon">
+                <!-- Este es el codigo del gato -->
+                <svg width="80" height="80" viewBox="0 0 888 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="undraw_cat_epte 1" clip-path="url(#clip0_1_40)">
+                    <path id="Vector" d="M560.17 337.74L418.68 333.72C418.68 333.72 429.33 270.01 395.16 252.33C371.87 240.27 351.2 183.94 357.08 145.61C357.16 145.1 357.24 144.59 357.33 144.09C360.31 126.93 368.83 113.64 385.12 110.03C437.78 98.37 475.36 107.41 475.36 107.41C475.36 107.41 484.06 107.52 496.95 109.94C497.41 110.02 497.87 110.11 498.33 110.21C534.82 117.36 602.27 142.82 605.19 233.22C609.21 357.42 560.17 337.72 560.17 337.72V337.74Z" fill="#3F3D56"/>
+                    <path id="Vector_2" d="M496.95 109.95C496.71 116.43 495.24 122.87 492.56 128.99C487 141.68 476.86 151.37 464.02 156.28C425.56 171 380.68 156.4 357.98 140.57C357.89 141.07 356.09 150.56 356.01 151.07C366.06 157.95 415.25 164.58 424.58 164.58C438.75 164.58 452.39 162.23 464.52 157.58C477.71 152.53 488.12 142.57 493.83 129.54C496.56 123.32 498.06 116.79 498.33 110.21C497.87 110.11 497.41 110.02 496.95 109.94V109.95Z" fill="#6C63FF"/>
+                    <path id="Vector_3" d="M507.41 118.2L484.86 61.49C484.86 61.49 511.93 15.09 490.66 9.94C469.39 4.78 447.48 32.49 447.48 32.49C447.48 32.49 406.88 18.31 391.42 29.91C391.42 29.91 365.64 -6.18 350.18 0.91C334.71 8 355.68 59.09 355.68 59.09C355.68 59.09 323.76 105.95 348.25 133.01C372.74 160.08 464.89 181.99 507.42 118.19L507.41 118.2Z" fill="#3F3D56"/>
+                    <g id="cola" filter="url(#filter0_d_1_40)">
+                    <path d="M560.755 256.752C583.639 264.542 607.537 272.47 632.566 271.718C657.596 270.966 683.907 258.643 687.81 239.736C689.836 229.964 685.844 219.508 690.73 210.351C697.316 198.05 718.531 193.289 735.009 197.503C751.517 201.717 763.614 212.606 772.315 224.109C788.585 245.659 795.08 273.95 777.649 294.953C762.542 313.153 733.877 321.4 707.238 328.461C671.72 337.869 632.089 347.186 597.674 335.637C563.079 324.019 544.218 290.465 557.03 263.29" fill="#3F3D56"/>
+                    </g>
+                    <path id="Vector_4" d="M428.74 92.71C428.74 92.71 414.86 87.16 405.85 94.1L416.26 110.06L428.75 92.72L428.74 92.71Z" fill="#6C63FF"/>
+                    <path id="Vector_5" d="M355.89 165.55L381.56 302.23C381.56 302.23 342.71 341.78 392.66 341.08C442.61 340.39 428.04 314.72 428.04 314.72L412.08 196.08" fill="#3F3D56"/>
+                    <path id="Vector_6" d="M391.4 342.09C377.87 342.09 369.69 338.99 367.07 332.86C362.3 321.7 377.83 304.69 380.49 301.89L363.23 199.71L365.2 199.38L382.63 302.56L382.27 302.92C382.09 303.1 364.33 321.37 368.91 332.07C371.26 337.57 379.23 340.26 392.65 340.07C411.3 339.81 423.32 335.9 427.42 328.77C431.11 322.35 427.21 315.27 427.17 315.2L427.08 315.03L427.05 314.84L415.95 232.28L417.93 232.01L429.01 314.39C429.67 315.64 433.12 322.85 429.17 329.75C424.64 337.65 412.36 341.8 392.68 342.07C392.25 342.07 391.83 342.07 391.41 342.07L391.4 342.09Z" fill="#2F2E41"/>
+                    <path id="Vector_7" d="M421.1 165.55L446.77 302.23C446.77 302.23 407.92 341.78 457.87 341.08C507.82 340.39 493.25 314.72 493.25 314.72L477.29 196.08" fill="#3F3D56"/>
+                    <path id="Vector_8" d="M456.61 342.09C443.08 342.09 434.9 338.99 432.28 332.86C427.51 321.72 443.01 304.73 445.69 301.9L435.38 246.9L437.35 246.53L447.85 302.55L447.48 302.92C447.3 303.1 429.54 321.37 434.12 332.07C436.47 337.57 444.45 340.27 457.86 340.07C476.52 339.81 488.55 335.9 492.64 328.75C496.33 322.31 492.42 315.27 492.38 315.2L492.28 315.03L476.3 196.2L478.28 195.93L494.21 314.39C494.87 315.64 498.32 322.85 494.37 329.75C489.84 337.65 477.56 341.8 457.88 342.07C457.45 342.07 457.03 342.07 456.61 342.07V342.09Z" fill="#2F2E41"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_1_40" x="549" y="196" width="243" height="153" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_40"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_40" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0_1_40">
+                    <rect width="888" height="342.09" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                    
+                <h4 class="titulo"> Demonios </h4>
+            </div>
+
+            <nav>
+                <ul>
+                    <li> Belial <span> (El de ganancias corruptas) </span> </li>
+                    <li> Baphomet <span> (El viola personas) </span> </li>
+                    <li> Asmodeo <span> (El mata parejas) </span> </li>
+                    <li> Phenex <span> (El tortuta animales) </span> </li>
+                </ul>
+            </nav>
+        </sidebar>
+
+        <div id="Titulo-Demonio">
+            <img src="./Assets/Imagenes/devil-icon.png" title="Demonio" alt="FallosTecnicos" class="Icon">
+            <h4 class="titulo"> Demonios </h4>
+            <i class="bi bi-list Hamburguesa"></i>
+        </div>
+
+        <!-- Aqui en el header coloco el select y pongo varias opciones vacias para "rellenar" un poco. Como era algo sencillo, tengo este puro codigo de HTML y lo otro lo modifico en el css. -->
+
+        <header class="Titulo">
+            <p> Ordenar por: </p>
+
+            <form>
+                <select class="Seleccionar">
+                    <option value="Price"> Precio </option>
+                    <option value="Price"></option>
+                    <option value="Price"></option>
+                    <option value="Price"></option>
+                </select>
+            </form>
+
+        </header>
+
+        <!-- Hasta aqui vamos bien. Ahora lo que haremos será trabajar sobre el main. Poner los demonios en una fila de 4 y que sean dos columnas. Notar que es hasta el final puesto que el footer no es parte del main solo del sidebar. -->
+
+        <main>
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/Belial.webp" alt="FallosTecnicos" title="Belial">
+                <h2> El de ganancias corruptas </h2>
+                <button> Invocar </button>
+            </div>
+
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/DoomDemonio.webp" alt="FallosTecnicos" title="Baphomet">
+                <h2> El viola personas </h2>
+                <button> Invocar </button>
+            </div>
+
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/Asmodeo.webp" alt="FallosTecnicos" title="Asmodeo">
+                <h2> El mata parejas </h2>
+                <button> Invocar </button>
+            </div>
+
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/Phenex2.jpeg" alt="FallosTecnicos" title="Phenex">
+                <h2> El tortura animales </h2>
+                <button> Invocar </button>
+            </div>
+
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/Belial.webp" alt="FallosTecnicos" title="Belial">
+                <h2> El de ganancias corruptas </h2>
+                <button> Invocar </button>
+            </div>
+
+            <div class="Demonio">
+                <img src="./Assets/Imagenes/DoomDemonio.webp" alt="FallosTecnicos" title="Baphomet">
+                <h2> El viola personas </h2>
+                <button> Invocar </button>
+            </div>
+
+        </main>
+
+        <div class="Paginas">
+            <ul>
+                <li> <i class="bi bi-caret-left"> </i> </li>
+                <li> 1 </li>
+                <li> 2 </li>
+                <li> 3 </li>
+                <li> <i class="bi bi-caret-right"> </i> </li>
+            </ul>
+        </div>
+
+        <footer>
+
+            <div>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+
+            <p> @MisDemonios </p>
+
+        </footer>
+
+    </div>
+
+</body>
